@@ -5,10 +5,10 @@
 replicaCount: 2
 
 image:
-  repository: nilshindenil/speed
+  repository: 888577054503.dkr.ecr.ap-south-1.amazonaws.com/speed-ecr-registry
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "1.0"
+  tag: ""
 
 imagePullSecrets: []
 nameOverride: ""
@@ -78,7 +78,7 @@ livenessProbe:
 readinessProbe:
   httpGet:
     path: /speed/health/readiness.htm
-    port: http
+    port: 8080
 
 autoscaling:
   enabled: false
