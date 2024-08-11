@@ -1,5 +1,8 @@
 FROM ubuntu:24.04
+
 ENV TOMCAT_HOME=/u01/middleware/apache-tomcat-9.0.93/
+ENV TOMCAT_HOME=/u01/middleware/apache-tomcat-9.0.93.tar.gz/
+
 ENV PATH=$PATH:$TOMCAT_HOME/bin
 
 RUN mkdir -p /u01/middleware
